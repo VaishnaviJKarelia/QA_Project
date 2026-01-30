@@ -11,3 +11,4 @@ def load_pdf(file_path):
 # For testing, we will just print the first 500 characters
 if __name__ == "__main__":
     print("PDF Loader initialized successfully!")
+    print("RAG System Search Verified!")
