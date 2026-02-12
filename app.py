@@ -1,4 +1,5 @@
 import os
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from pypdf import PdfReader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
@@ -24,13 +25,12 @@ def chunk_text(text):
 
 # 3. STORE: Create the Vector Database
 def create_vector_db(chunks):
-    embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
     vector_db = FAISS.from_texts(chunks, embeddings)
-    vector_db.save_local("faiss_index")
     return vector_db
 
 if __name__ == "__main__":
-    os.environ["GOOGLE_API_KEY"] = "AIzaSyAh1mEXCVDhHatL6hZ9k6W_c5jJ6TNUev0"
+    os.environ["GOOGLE_API_KEY"] = "AIzaSyAQ06eJdI5Rr6P-_zDTIgJRC-xUFzhuucg"
     
     print("🚀 Starting Intelligent QA System...")
     
