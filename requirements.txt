@@ -1,0 +1,9 @@
+streamlit==1.30.0
+PyPDF2==3.0.1
+google-generative-ai==0.7.0
+langchain==0.0.356
+langchain-community==0.0.8
+faiss-cpu==1.7.4
+pytest==7.4.0
+pytest-mock==3.10.0
+python-dotenv==1.0.0

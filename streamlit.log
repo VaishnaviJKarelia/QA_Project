@@ -1,0 +1,33 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.135:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+
+  A new version of Streamlit is available.
+
+  See what's new at https://discuss.streamlit.io/c/announcements
+
+  Enter the following command to upgrade:
+  $ pip install streamlit --upgrade
+
+2026-03-28 21:56:38.388 Uncaught app exception
+Traceback (most recent call last):
+  File "/Users/vaishnavikarelia/Desktop/QA_Project/.venv/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/vaishnavikarelia/Desktop/QA_Project/main.py", line 12, in <module>
+    from langchain.text_splitter import RecursiveCharacterTextSplitter
+ModuleNotFoundError: No module named 'langchain'
+2026-03-28 21:56:38.701 Uncaught app exception
+Traceback (most recent call last):
+  File "/Users/vaishnavikarelia/Desktop/QA_Project/.venv/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/vaishnavikarelia/Desktop/QA_Project/main.py", line 12, in <module>
+    from langchain.text_splitter import RecursiveCharacterTextSplitter
+ModuleNotFoundError: No module named 'langchain'
