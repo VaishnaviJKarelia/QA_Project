@@ -31,3 +31,4 @@ Traceback (most recent call last):
   File "/Users/vaishnavikarelia/Desktop/QA_Project/main.py", line 12, in <module>
     from langchain.text_splitter import RecursiveCharacterTextSplitter
 ModuleNotFoundError: No module named 'langchain'
+  Stopping...
